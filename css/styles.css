@@ -118,6 +118,7 @@ profile-photo .img {
   flex-direction: column;
 }
 .profile-text .home-content .text-1 {
+  color: #e5e5e5;
   font-size: 27px;
 }
 .profile-text .home-content .text-2 {
@@ -133,6 +134,15 @@ profile-photo .img {
   color: #e5e5e5;
   font-size: 40px;
   margin: 25px 0;
+}
+.profile-text .home-content .typing {
+  color: #fed700;
+  font-size: 40px;
+  margin: 25px 0;
+}
+.profile-text .home-content p {
+  color: #e5e5e5;
+  margin-bottom: 10px;
 }
 .profile-text .social i {
   color: #e5e5e5;
