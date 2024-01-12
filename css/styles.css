@@ -22,6 +22,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   background-color: #202020;
+  margin: 0 150px;
 }
 
 /*---------------------------Header---------------------------*/
@@ -144,29 +145,29 @@ profile-photo .img {
   transform: rotate(360deg);
 }
 
- /*---------------------------About---------------------------*/
+/*---------------------------About---------------------------*/
 
- .about-area{
-  padding: 130px;
+.about-area {
+  padding-top: 130px;
   background-color: #202020;
 }
-.about{
+.about {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom:50px;
+  margin-bottom: 50px;
 }
-.about-content{
+.about-content {
   flex-basis: 60%;
 }
-.about-content h4{
+.about-content h4 {
   color: #fed700;
   font-size: 40px;
   line-height: 70px;
   text-transform: capitalize;
 }
 .about-content ul {
-  color:#fff;
+  color: #fff;
   text-align: justify;
 }
 
@@ -175,18 +176,100 @@ profile-photo .img {
   margin-bottom: 10px;
 }
 
-.about-skills{
+.about-skills {
   flex-basis: 35%;
 }
-.about-skills ul li{
+.about-skills ul li {
   border-bottom: 1px dashed #ddd;
   padding-bottom: 10px;
   margin-bottom: 10px;
   color: #fff;
   font-size: 18px;
 }
-.about-skills ul li:last-child{
+.about-skills ul li:last-child {
   border-bottom: 0;
   padding-bottom: 0;
   margin-bottom: 0;
+}
+
+/*---------------------------Education & Internship---------------------------*/
+
+.education-content .row {
+  display: flex;
+  border-radius: 5px;
+  height: 400px;
+  margin-bottom: 250px;
+}
+
+.education-content .title {
+  color: #fed700;
+}
+.education-content .row .education,
+.education-content .row .internship {
+  color: #e5e5e5;
+  flex: 0 0 50%;
+  max-width: 50%;
+  margin-top: 30px;
+}
+.education-content h3.title {
+  font-size: 24px;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+.education-content .row.timeline-box {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.education-content .row .timeline {
+  padding: 30px 15px;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  width: 100%;
+  position: relative;
+}
+.education-content .row .timeline-item {
+  position: relative;
+  padding-left: 37px;
+  padding-bottom: 20px;
+}
+.education-content .row .internship .timeline-item {
+  position: relative;
+  padding-left: 37px;
+  padding-bottom: 30px;
+}
+.education-content .row .timeline-item:last-child {
+  padding-bottom: 0;
+}
+.education-content .row .timeline-item::before {
+  content: "";
+  width: 1px;
+  position: absolute;
+  height: 100%;
+  left: 7px;
+  top: 0;
+  background-color: #fed700;
+}
+.education-content .row .circle-dot {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: #e5e5e5;
+}
+.education-content .row .timeline-title {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+.education-content .row .internship .timeline-title {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 17px;
+}
+.education-content .row .timeline-text {
+  line-height: 30px;
+  font-size: 17px;
+  text-align: justify;
 }
