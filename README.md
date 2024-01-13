@@ -2,7 +2,7 @@
 This is Persnol Portfolio Website.
 
 ## Demo
-- Demo hosted on Netlify: [Shopping Cart](https://rahulkumarbalai-portfolio.netlify.app/)
+- Demo hosted on Netlify: [Portfolio Website](https://rahulkumarbalai-portfolio.netlify.app/)
 
 # Build using
 - HTML
