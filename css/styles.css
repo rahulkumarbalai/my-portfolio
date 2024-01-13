@@ -22,7 +22,6 @@ body {
   font-size: 16px;
   line-height: 24px;
   background-color: #202020;
-  margin: 0 150px;
 }
 
 /*---------------------------Header---------------------------*/
@@ -44,14 +43,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.logo {
-  display: flex;
-  align-items: center;
-  position: relative;
-  text-transform: uppercase;
-  font-size: 26px;
-  font-weight: 700;
 }
 .signature {
   width: 90px;
@@ -85,6 +76,9 @@ body {
   display: none;
 }
 
+.main-container{
+  padding: 0% 10%;
+}
 /*---------------------------HomePage--------------------------*/
 
 .FirstElement {
@@ -160,12 +154,16 @@ profile-photo .img {
 .about-area {
   padding-top: 130px;
   background-color: #202020;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 5rem;
 }
 .about {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 150px;
 }
 .about-content {
   flex-basis: 60%;
@@ -405,4 +403,80 @@ profile-photo .img {
 
 .copyright {
   font-size: 12px;
+}
+
+/*------------------- Responsive Design on small screen -------------------*/
+
+/* Medium layout */
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .FirstElement {
+    flex-direction: column;
+    padding-top: 2rem;
+  }
+  .profile-text {
+    padding: 40px 0px;
+  }
+}
+
+/* tablet layout */
+@media only screen and (min-width: 768px) and (max-width: 999px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Mobile Layout */
+@media only screen and (max-width: 767px) {
+  body{
+    margin: 0;
+  }
+  .container {
+    width: 350px;
+    /* margin: 0; */
+  }
+  .header .menu_icon {
+    display: block;
+  }
+  .header ul {
+    display: none;
+  }
+  .header i {
+    color: #e5e5e5;
+  }
+  .profile-text {
+    width: 350px;
+  }
+  .FirstElement .profile-text p {
+    text-align: justify;
+  }
+  .about {
+    flex-direction: column;
+    flex-basis: 100%;
+    margin-bottom: 30px;
+  }
+  .about-skills {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .education-content .row {
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 50px;
+  }
+  .education-content .row .education,
+  .education-content .row .internship {
+    flex-basis: 100%;
+    max-width: 100%;
+    margin-top: 30px;
+  }
+  .project {
+    flex-basis: 100%;
+    margin-bottom: 30px;
+  }
 }
